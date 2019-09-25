@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\treeview_exe.png" />
+    <None Remove="Icons\treeview_folder.png" />
+    <None Remove="Icons\treeview_img0.png" />
+    <None Remove="Icons\treeview_img1.png" />
+    <None Remove="Icons\treeview_mp3.png" />
+    <None Remove="Icons\treeview_pdf.png" />
+    <None Remove="Icons\treeview_png.png" />
+    <None Remove="Icons\treeview_ppt.png" />
+    <None Remove="Icons\treeview_video.png" />
+    <None Remove="Icons\treeview_word.png" />
+    <None Remove="Icons\treeview_zip.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\treeview_exe.png" />
+    <EmbeddedResource Include="Icons\treeview_folder.png" />
+    <EmbeddedResource Include="Icons\treeview_img0.png" />
+    <EmbeddedResource Include="Icons\treeview_img1.png" />
+    <EmbeddedResource Include="Icons\treeview_mp3.png" />
+    <EmbeddedResource Include="Icons\treeview_pdf.png" />
+    <EmbeddedResource Include="Icons\treeview_png.png" />
+    <EmbeddedResource Include="Icons\treeview_ppt.png" />
+    <EmbeddedResource Include="Icons\treeview_video.png" />
+    <EmbeddedResource Include="Icons\treeview_word.png" />
+    <EmbeddedResource Include="Icons\treeview_zip.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Xamarin.SfTreeView" Version="16.4.0.47" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1009999" />
+  </ItemGroup>
+</Project>
