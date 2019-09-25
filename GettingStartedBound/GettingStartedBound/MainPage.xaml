@@ -9,13 +9,13 @@
         <local:FileManagerViewModel x:Name="viewModel" />
     </MasterDetailPage.BindingContext>
 
-    <MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
         <ContentPage Title="Master">
             <Label Text="Navigation Content" />
         </ContentPage>
-    </MasterDetailPage.Master>
+    </MasterDetailPage.Detail>
 
-    <MasterDetailPage.Detail>
+    <MasterDetailPage.Master>
         <ContentPage Title="Tree View">
             <syncfusion:SfTreeView x:Name="treeView"
                                    ItemHeight="40"
@@ -83,6 +83,6 @@
                 </syncfusion:SfTreeView.ItemTemplate>
             </syncfusion:SfTreeView>
         </ContentPage>
-    </MasterDetailPage.Detail>
+    </MasterDetailPage.Master>
 
 </MasterDetailPage>
