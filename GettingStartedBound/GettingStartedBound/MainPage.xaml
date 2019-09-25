@@ -11,7 +11,7 @@
 
     <MasterDetailPage.Detail>
         <ContentPage Title="Master">
-            <Label Text="Navigation Content" />
+            <Label x:Name="Text" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
         </ContentPage>
     </MasterDetailPage.Detail>
 
@@ -21,6 +21,7 @@
                                    ItemHeight="40"
                                    Indentation="15"
                                    ExpanderWidth="40"
+                                   SelectionChanged="TreeView_SelectionChanged"
                                    ChildPropertyName="SubFiles"
                                    ItemsSource="{Binding ImageNodeInfo}"
                                    AutoExpandMode="AllNodesExpanded">
